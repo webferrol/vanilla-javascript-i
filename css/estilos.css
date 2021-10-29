@@ -1,0 +1,78 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Roboto Mono', monospace;
+
+	background-image: url(../images/javascript.png), 
+	url(../images/background.png), 
+	linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-size: 30%,cover,auto;
+	background-position: bottom right, left, right;
+	background: -moz-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), 
+	-webkit-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), 
+	-ms-linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0)), 
+	linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+
+}
+	.container{
+		display: flex;
+		justify-content: center;
+
+		min-height: 100vh;
+		width: 100vw;
+
+		overflow: hidden; 
+	}
+	.container section{
+		flex-basis: 40%;
+		width: 50%;/*hack falla flex*/
+		float: left;
+
+		padding:2em;
+	}
+		span.pre{
+			/*normal | pre | nowrap | pre-wrap | pre-line*/
+			
+			
+
+			white-space:pre-line;
+
+			background-color: #ccb7ae;
+		}	
+
+@media screen and (max-width: 800px){
+	body{
+		background-color:rgba(255,0,0,.2);
+		font-size: .9em;
+	}
+
+		.container{
+			display: block;
+
+			margin:0 auto;
+			width: 90%;
+		}
+			.container section{
+				float: none;
+
+				width: 100%;
+				padding:1em;
+
+			}
+
+			[class="bloque2"]{
+				color:white;
+			}
+				[class="bloque2"] ol{
+					background-color: teal;
+					list-style-type: inside;
+					border-radius:5px;
+				}
+					[class="bloque2"] ol li{
+						padding: .5em;
+
+
+					}
+}

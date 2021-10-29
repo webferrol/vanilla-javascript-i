@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">  
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Variables y constantes</title>
+</head>
+<body>
+	<div class="container">
+		<section class="bloque1">
+		<h1>JS: variables y constantes</h1>
+		<ol>
+			<li>
+				Variables
+				<ul>
+					<li>Nombre de variable
+						<span class="pre">
+						numero
+						</span>
+					</li>
+					<li>Palabras reservadas
+						<ul>
+								<li>
+							<span class="pre">
+								var
+							</span>
+							Ejemplo <span class="pre">
+								var numero=16;
+							</span>
+								</li>
+								<li>
+							<span class="pre">
+								let
+							</span>
+							Ejemplo <span class="pre">
+								let numero=16;
+							</span>
+								</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				Constantes
+				<ul>
+					<li>Palabra reservada
+						<span class="pre">
+							const
+						</span>
+						Ejemplo <span class="pre">
+							const PI=3.1416;
+						</span>
+					</li>
+				</ul>
+			</li>
+			<li>
+				Nombres correctos de la variables
+			</li>
+			<li>
+				Convenciones
+				<ul>
+					<li>camelCase</li>
+				</ul>
+			</li>
+			<li>
+				Operaciones de variables
+				<ul>
+						<li>
+					<span class="pre">
+						Aritméticos
+					</span>
+					Ejemplo <span class="pre">
+						let resultado=numero1+numeros2;
+					</span>
+						</li>
+						<li>
+					<span class="pre">
+						Concatenación
+					</span>
+					Ejemplo <span class="pre">
+						let nombreUsuario = "Xurxo";
+						let apellidosUsuario="González";
+						let concatenacion=nombreUsuario+" "+apellidosUsuario;
+						document.write(`Su nombre completo es ${concatenacion}.`);
+					</span>
+						</li>
+						<li>
+					<span class="pre">
+						Lógicos:
+						==,!=,>,>=,<,<=,!
+					</span>
+					Ejemplo <span class="pre">
+						var numero1 = 100;
+						var numero2=100;
+						var resultado=numero1>numero2;
+						console.log(resultado);
+					</span>
+						</li>
+				</ul>
+			</li>				
+		</ol>
+		</section>
+		<section class="bloque2">
+			<h2>Ejercicos para los alumnos</h2>
+			<ol>
+				<li>Crea una variable en donde se muestre tu nombre a través de la función console.log</li>
+				<li>Cambiar el valor de dicha variable y comprobar que efectivamente cambió</li>
+				<li>Comenta la variable y traba de verla con console.log() y razona lo que pasa</li>
+				<li>
+					Crea tres variables: <strong>operador1</strong>, <strong>operador2</strong>, <strong>resultado</strong>. Inicializa las variables. Suma operador1 y operador2 y guarda el resultado. Muestra por consola el resultado de dicha operación.
+				</li>
+			</ol>
+			<h2>Ejercicios para resolver con el profe</h2>
+			<ol>
+				<li>
+					Algoritmo de un programa que calcule el área de un círculo dado un radio incializado en una variable.
+				Utilizar una constante PI. La salida será por console.log()
+				<span class="pre" id="resultado1">
+					
+				</span>
+				</li>
+				<li>
+					Algoritmo de un programa que muestre por pantalla el área de un triángulo dado un lado.
+					<span class="pre" id="resultado2">
+					
+					</span>
+				</li>
+				<li>
+					Algoritmo de un programa que dada una altura nos digas si una persona es alta si pasa de dos metros y bajas si es inferior a estas altura. En este caso te será necesaro un <strong>if</strong>
+					<span class="pre" id="resultado3">
+						Resultado:
+					</span>
+				</li>			
+			</ol>
+		</section>	
+		<script src="js/scripts.js"></script>
+		<noscript>
+			<strong>Tú navegador no soporta JavaScript</strong>		
+		</noscript>
+	</div>
+</body>
+</html>
